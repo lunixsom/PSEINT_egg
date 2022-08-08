@@ -1,9 +1,16 @@
 Proceso ej9_Subprocesos
-	definir palabra Como Caracter
-	Definir nuevaPalabra Como Caracter
-	leer palabra
+	definir palabra, nuevaPalabra Como Caracter
 	
-	codificarPalabra(palabra,nuevaPalabra)
+	Repetir
+		longitudPalabra <- Longitud(palabra)
+		
+		ultimaLetra <- SubCadena(palabra,longitudPalabra ,longitudPalabra +1)
+		
+		Escribir "Ingresa la palabra o frase que termine con . "
+		leer palabra
+	Hasta Que ultimaLetra = "."
+	
+	codificarPalabra(palabra,nuevaPalabra) 
 	
 	Escribir "La palabra codificada es: " nuevaPalabra
 	
