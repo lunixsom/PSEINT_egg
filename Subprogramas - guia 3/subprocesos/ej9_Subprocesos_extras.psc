@@ -22,19 +22,19 @@ SubProceso codificarPalabra ( palabra, nuevaPalabra Por Referencia )
 		
 		letra <- SubCadena(palabra,i,i)
 		Segun letra Hacer 
-			"a":
+			"a" O "A":
 				nuevaLetra <- "@"
 				nuevaPalabra <- Concatenar(nuevaPalabra,nuevaLetra)
-			"e":
+			"e" o "E":
 				nuevaLetra <- "#"
 				nuevaPalabra <- Concatenar(nuevaPalabra,nuevaLetra)
-			"i":
+			"i" o "I":
 				nuevaLetra <- "$"
 				nuevaPalabra <- Concatenar(nuevaPalabra,nuevaLetra)
-			"o":
+			"o" o "O":
 				nuevaLetra <- "%"
 				nuevaPalabra <- Concatenar(nuevaPalabra,nuevaLetra)
-			"u":
+			"u" o "U":
 				nuevaLetra <- "*"
 				nuevaPalabra <- Concatenar(nuevaPalabra,nuevaLetra)
 			De Otro Modo:
