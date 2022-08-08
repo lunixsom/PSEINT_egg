@@ -25,10 +25,18 @@ SubProceso codificarPalabra ( palabra, nuevaPalabra Por Referencia )
 			"a":
 				nuevaLetra <- "@"
 				nuevaPalabra <- Concatenar(nuevaPalabra,nuevaLetra)
-//			opcion_2:
-//				secuencia_de_acciones_2
-//			opcion_3:
-//				secuencia_de_acciones_3
+			"e":
+				nuevaLetra <- "#"
+				nuevaPalabra <- Concatenar(nuevaPalabra,nuevaLetra)
+			"i":
+				nuevaLetra <- "$"
+				nuevaPalabra <- Concatenar(nuevaPalabra,nuevaLetra)
+			"o":
+				nuevaLetra <- "%"
+				nuevaPalabra <- Concatenar(nuevaPalabra,nuevaLetra)
+			"u":
+				nuevaLetra <- "*"
+				nuevaPalabra <- Concatenar(nuevaPalabra,nuevaLetra)
 			De Otro Modo:
 				nuevaPalabra <- Concatenar(nuevaPalabra,letra)
 		Fin Segun
