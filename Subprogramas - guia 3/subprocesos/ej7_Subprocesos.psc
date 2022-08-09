@@ -7,17 +7,22 @@ Proceso ej7_Subprocesos
 // que se van a introducir.
 	
 	definir cantDias,i Como Entero
-	
+	definir tempMin,tempMax,tempMedia Como Real
 	Escribir "Ingrese la cantidad de días: "
 	leer cantDias
 	
 	Para  i<-1 Hasta cantDias Hacer
-		definir tMin,tMax,tMedia Como Real
-		calcTempMedia(tMin, tMax,tMedia)
+		calcTempMedia(i,tempMin, tempMax,tempMedia)
 	FinPara
 FinProceso
 
-SubProceso calcTempMedia(minima, maxima, media)
-		
+SubProceso calcTempMedia(i, minima, maxima, media)
+	Escribir "Ingrese temperatura minima, dia ", i," :"
+	leer minima
+	Escribir "Ingrese temperatura maxima, dia ", i," :"
+	leer maxima
+	media <- (minima + maxima) / 2
+	
+	Escribir "La temperatura media del dia ",i " es: " media
 FinSubProceso
 	
